@@ -13,8 +13,8 @@
   --ink-soft:#243443;       /* nagłówki drugorzędne */
   --muted:#6B7785;          /* tekst poboczny */
   --line:rgba(21,33,46,.12);/* hairline */
-  --accent:#E8A317;         /* stonowany petrol-slate — jedyny akcent */
-  --accent-d:#C9870C;
+  --accent:#E31937;         /* stonowany petrol-slate — jedyny akcent */
+  --accent-d:#B80F2A;
   --accent-soft:rgba(232,163,23,.10);
   --dark:#15212E;           /* sekcje ciemne (stopka/CTA) */
 
@@ -1847,3 +1847,21 @@ footer{view-transition-name:mt-foot}
 .btn-accent{color:#14171c}
 .nav .nav-links a.btn-accent{color:#14171c}
 .btn-accent[data-accent-d],.cta-d .btn-accent{color:#14171c}
+
+
+/* === MOTYW wg wzoru (dach/rzemiosło): grafit + czerwień + kremowy papier + piaskowy dodatek === */
+:root{
+  --paper:#EDE9E2; --paper-2:#E2DCD1; --paper-3:#E2DCD1;
+  --ink:#231F20; --ink-soft:#322D2E; --muted:#5A5455;
+  --line:rgba(35,31,32,.14);
+  --accent:#E31937; --accent-d:#B80F2A; --accent-soft:rgba(227,25,55,.10);
+  --accent-text:#B80F2A;
+  --dark:#231F20;
+}
+.btn-accent,.nav-links a.btn-accent,.nav .nav-links a.btn-accent,.btn-accent[data-accent-d],.cta-d .btn-accent{color:#fff}
+.nav .nav-links a.btn-accent:hover{color:#fff}
+.btn-accent{background:var(--accent);border-color:var(--accent)}
+.hero-fach::after{background:linear-gradient(178deg,rgba(35,31,32,.38) 0%,rgba(35,31,32,.68) 55%,rgba(35,31,32,.92) 100%)}
+h1,h2,h3{text-transform:none}
+.eyebrow{color:#AC9376}
+.cta{background:#231F20}
